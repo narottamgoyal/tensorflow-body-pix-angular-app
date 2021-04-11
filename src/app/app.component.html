@@ -1,0 +1,25 @@
+<div class="main-content">
+  <div>
+    <input type="file" (change)="getImage($event)" #selectFile />
+    <input type="text" #tfilepath />
+    <button (click)="loadImage(tfilepath)">load Image</button>
+    <div class="image-size" (click)="selectFile.click()">
+      <img
+        id="imageid"
+        [src]="image"
+        alt=""
+        class="image-exercise"
+        (click)="selectFile.click()"
+      />
+    </div>
+  </div>
+  <div class="btn-content">
+    <button (click)="GrayImage()">Gray Image</button>
+    <button (click)="ColorPop()">Color pop</button>
+    <button (click)="CropImage()">Crop Image</button>
+  </div>
+  <div>
+    <button (click)="Reset()">Reset</button>
+    <div class="image-size"><canvas id="canvasid"></canvas></div>
+  </div>
+</div>

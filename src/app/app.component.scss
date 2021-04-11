@@ -1,0 +1,17 @@
+.main-content {
+  display: flex;
+}
+
+.image-size {
+  width: 40em;
+  overflow: auto;
+  height: 40em;
+  border: 1px solid black;
+}
+
+.btn-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px;
+}
